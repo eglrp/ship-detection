@@ -1,0 +1,24 @@
+Image_augment.m: we augment images from 200 to 1200. Another file (imageAugmen.ipynb) augments these 1200 images to 2400
+
+
+ExtractHarris.m and 
+findLocalMaximum.m: we use them to detect harris corner (help to generate positive samples for ship head classification) 
+
+
+shipheadnegative.m: we generate negative samples for ship head classification
+
+
+shipheadwith8direction.m: we generate positive samples for ship head classification
+
+
+shipbodyROIreg.m: generate samples for ship localization
+
+
+shipbodyROIregstep2.m: compute the regression target and classification target for the samples generated from shipbodyROIreg.m
+
+
+ValicateDetectionResult.m: compute the IoU, precision, recall for the detection result
+
+
+Notice: make sure the path for images or samples is correct in your computer.
+

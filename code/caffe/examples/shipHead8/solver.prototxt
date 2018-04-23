@@ -1,0 +1,36 @@
+# The train/test net protocol buffer definition
+net: "examples/shipHead8/train_test.prototxt"
+
+
+# test_iter specifies how many forward passes the test should carry out.
+test_iter: 447
+
+
+# Carry out testing every 1000 training iterations.
+test_interval: 1000
+
+
+# The base learning rate, momentum and the weight decay of the network.
+base_lr: 0.01
+momentum: 0.9
+weight_decay: 0.0005
+lr_policy: "fixed"
+
+#lr_policy: "step"
+#stepsize:30000
+#gamma: 0.1
+
+
+# Display every 200 iterations
+display: 1000
+
+# The maximum number of iterations
+max_iter:30000
+
+snapshot: 30000
+snapshot_prefix: "examples/shipHead8/shiphead8"
+
+# solver mode: CPU or GPU
+solver_mode: GPU
+
+
