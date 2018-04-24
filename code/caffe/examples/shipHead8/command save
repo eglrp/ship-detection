@@ -5,10 +5,7 @@
 ./build/tools/convert_imageset --shuffle --resize_height=40 --resize_width=40 /home/bit/WF/caffe/examples/shipHead8/shipheadtest/  /home/bit/WF/caffe/examples/shipHead8/shipheadtest/shiphead.txt /home/bit/WF/caffe/examples/shipHead8/test_lmdb
 
 
-./build/tools/compute_image_mean examples/shipHead8/train_lmdb  examples/shipHead8/mean.binaryproto
-
-
 ./build/tools/caffe train --solver=examples/shipHead8/solver.prototxt -gpu 0
 
 
-./build/tools/caffe test -model=examples/shipHead8/train_test.prototxt -weights=examples/shipHead8/shiphead8_iter_100000.caffemodel -gpu 0
+./build/tools/caffe test -model=examples/shipHead8/train_test.prototxt -weights=examples/shipHead8/shiphead8_iter_60000.caffemodel -gpu 0
